@@ -1,0 +1,27 @@
+GET http://localhost:8000/api/notes
+
+###
+
+GET http://localhost:8000/api/notes/6500d9093638ca859793d418
+
+###
+
+POST http://localhost:8000/api/notes
+Content-Type: application/json
+
+{
+    "title": "Test note",
+    "content": "If you want, you can!"
+}
+
+###
+
+DELETE http://localhost:8000/api/notes/6500da013638ca859793d438
+
+###
+PATCH http://localhost:8000/api/notes/6500c90e7aa2e0169fb22014
+Content-Type: application/json
+
+{
+    "title": "About the determination"
+}
